@@ -1,0 +1,26 @@
+/* stegobun.com (npm run site): brand Sky, ink, Silkscreen headings, Atkinson Hyperlegible text (fonts: SIL OFL). */
+@font-face { font-family: 'Silkscreen'; font-weight: 400; font-display: swap; src: url('fonts/silkscreen-400.woff2') format('woff2'); }
+@font-face { font-family: 'Atkinson Hyperlegible'; font-weight: 400; font-display: swap; src: url('fonts/atkinson-hyperlegible-400.woff2') format('woff2'); }
+@font-face { font-family: 'Atkinson Hyperlegible'; font-weight: 700; font-display: swap; src: url('fonts/atkinson-hyperlegible-700.woff2') format('woff2'); }
+:root { --sky: #D6E7EF; --ink: #22303A; --muted: #56656F; --paper: #FBFAF7; --grass: #7FA35A; --soil: #9A7854; --link: #3F6A86; }
+* { box-sizing: border-box; }
+html { background: var(--sky); }
+body { margin: 0; color: var(--ink); font: 17px/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; }
+header { padding: 16px; max-width: 760px; margin: 0 auto; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: 'Silkscreen', monospace; font-size: 18px; }
+.brand img { border-radius: 10px; image-rendering: pixelated; }
+main { max-width: 760px; margin: 0 auto 32px; padding: 28px 24px; background: var(--paper); border-radius: 16px; border-bottom: 10px solid var(--soil); box-shadow: 0 -6px 0 var(--grass) inset; }
+h1, h2 { font-family: 'Silkscreen', monospace; font-weight: 400; letter-spacing: 0.04em; line-height: 1.2; }
+h1 { font-size: 34px; margin: 8px 0 12px; }
+h2 { font-size: 19px; margin: 28px 0 6px; }
+main > h1:first-child { font-size: 26px; margin-top: 4px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+.hero { text-align: center; padding: 16px 0 24px; }
+.hero img { image-rendering: pixelated; border-radius: 32px; }
+.tag { font-size: 20px; max-width: 30em; margin: 0 auto 12px; }
+.soon { color: var(--muted); font-weight: 700; }
+footer { max-width: 760px; margin: 0 auto; padding: 0 16px 32px; color: var(--muted); font-size: 14px; text-align: center; }
+footer a { color: var(--muted); }
+@media (max-width: 480px) { main { margin: 0 8px 24px; padding: 20px 16px; } h1 { font-size: 28px; } }
